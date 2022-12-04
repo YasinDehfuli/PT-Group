@@ -251,11 +251,25 @@
 
 })()
 
-let headerbg = ['/assets/img/carousel/hero-carousel-2.jpg',
+let bg =       ['/assets/img/carousel/hero-carousel-2.jpg',
                 '/assets/img/carousel/hero-carousel-3.jpg',
                 '/assets/img/carousel/hero-carousel-4.jpg',
-                '/assets/img/carousel/hero-carousel-5.jpg',
-                '/assets/img/carousel/hero-carousel-6.jpg']
+                '/assets/img/carousel/hero-carousel-5.jpg',]
+
+
+
+let counter = 0;
+setInterval(function () {
+    let slideItem = bg[counter]
+
+
+    $('#hero').css('background-image' , 'url('+bg[counter]+')')
+    if (counter == bg.length) {
+        counter = 0;
+        counter++;
+    }
+}, 10000)
+
 
 
 
