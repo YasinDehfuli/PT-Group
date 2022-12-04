@@ -789,7 +789,7 @@ section {
 
 .services .icon {
   position: absolute;
-  left: -20px;
+
   top: calc(50% - 30px);
 }
 
@@ -817,7 +817,7 @@ section {
 
 .services .description {
   font-size: 14px;
-  margin-left: 40px;
+  margin-left: 80px;
   line-height: 24px;
   margin-bottom: 0;
 }
@@ -903,7 +903,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info p {
-  color: #fedac0;
+  color: var(--second-bg-color);
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -1061,7 +1061,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #fedac0;
+  color: var(--second-bg-color);
   font-size: 26px;
 }
 
