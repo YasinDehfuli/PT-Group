@@ -29,6 +29,7 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="stylesheet"
@@ -47,10 +48,6 @@
     <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- =======================================================
-    * Template Name: Selecao - v4.9.1
-    * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
     ======================================================== -->
 </head>
 
@@ -151,7 +148,6 @@
             <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
         </g>
     </svg>
-
 </section><!-- End Hero -->
 
 <main id="main">
@@ -734,7 +730,7 @@ precision_manufacturing
                     <div id="faq2" class="collapse" data-bs-parent=".faq-list">
                         <p>
                             Visit our website or check our catalogues, select your interested items, submit your inquiry
-                            on website or send email to commercial@pacific-pretech.com, our sales will contact with you
+                            on website or send email to commercial[at]pacific-pretech.com, our sales will contact with you
                             as soon as
                             possible.
                         </p>
@@ -819,7 +815,7 @@ precision_manufacturing
                         <div class="email">
                             <i class="bi bi-envelope"></i>
                             <h4>Email:</h4>
-                            <p>contact@pacific-pretech.com</p>
+                            <p>contact[at]pacific-pretech.com</p>
                         </div>
 
                         <!--                        <div class="phone">-->
@@ -906,7 +902,19 @@ precision_manufacturing
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
-
+<!-- PreLoader -->
+<div id="preloader"></div>
+<script>/**
+ * Preloader
+ */
+const preloader = document.querySelector('#preloader');
+if (preloader) {
+    window.addEventListener('load', () => {
+        preloader.remove();
+    });
+}
+</script>
+<!-- PreLoader -->
 </body>
 
 </html>

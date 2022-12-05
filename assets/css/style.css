@@ -69,7 +69,7 @@ h6 {
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0ms !important;
   }
 }
 
@@ -81,7 +81,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: rgba(42, 44, 57, 0.9);
+  background: rgba(42, 44, 70, 0.9);
 }
 
 #header.header-transparent {
@@ -344,7 +344,7 @@ h6 {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background-image: url("/assets/img/carousel/hero-carousel-1.jpg");
+  background-image: url("../img/carousel/ca1.jpg");
   padding: 0;
   background-position: center;
   text-shadow: black 3px 3px 3px;
@@ -1104,7 +1104,7 @@ section {
 # midBG
 --------------------------------------------------------------*/
 #midbg{
-  background-image: url("/assets/img/midbg.jpg");
+  background-image: url("../img/midbg.jpg");
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1405,7 +1405,7 @@ section {
 }
 
 #footer p {
-  font-size: 15;
+  font-size: 15px;
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
@@ -1442,4 +1442,50 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background:rgba(172,173,183,0.1) ;
+  transition: all 0.6s ease-out;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #fff;
+  border-color: var(--first-bg-color) transparent var(--second-bg-color) transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1.5s linear infinite;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
