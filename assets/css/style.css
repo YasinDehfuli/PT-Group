@@ -118,7 +118,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -231,7 +231,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -880,6 +880,8 @@ section {
 
 .portfolio .portfolio-item .portfolio-img img {
   transition: all 0.8s ease-in-out;
+    width: 400px;
+    height: 300px;
 }
 
 .portfolio .portfolio-item .portfolio-info {
